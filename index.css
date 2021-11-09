@@ -160,13 +160,15 @@ header nav a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .middle .top .formContainer {
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .formContainer input {
@@ -215,6 +217,43 @@ header nav a:hover {
     color: white;
 }
 
+
+/*Styles for the container that displays the tags*/
+
+.top .displayTags {
+    width: 50%;
+    height: fit-content;
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+.tag{
+    display: flex;
+    color: white;
+    height: 3rem;
+    align-items: center;
+    margin-left: 1rem;
+    font-weight: bold;
+    background: seagreen;
+    border-radius: 5px;
+    border: 1px solid #4f4f4f;
+    padding: 5px;
+}
+
+#tagI{ 
+    height: 10px;
+    color: #EE4B2B;
+    font-size: 2.2rem;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    text-shadow: -1px -.5px  white;
+    -webkit-font-smoothing: antialiased
+}
+#tagI:hover{
+    cursor: pointer;
+}
+
 /*styles for the bottom portion of the website*/
 
 .bottom {
@@ -256,7 +295,7 @@ header nav a:hover {
     border: 2px solid #4f4f4f;
     padding: 10px;
     border-radius: 0.5rem;
-    height: 27vh;
+    height: fit-content;
 }
 
 footer {

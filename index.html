@@ -3,7 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./index.css" />
-
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -24,10 +27,24 @@
         <section class="middle">
             <div class="top">
                 <div class="formContainer">
-                    <form action="">
-                        <input type="text" placeholder="E.g. eggs, milk, spaghetti" />
-                        <input type="button" value="submit" />
+                    <form id="form1" action="">
+                        <input
+                            type="text"
+                            id="a"
+                            placeholder="E.g. eggs, milk, spaghetti"
+                            autocomplete="off"
+                        />
+                        <input
+                            class="submitButton"
+                            type="button"
+                            value="submit"
+                        />
                     </form>
+                </div>
+                <div class="displayTags" id="displayTags">
+                    <p class="tag">
+                        Test Tag<i class="material-icons" id="tagI">close</i>
+                    </p>
                 </div>
             </div>
             <div class="bottom">
@@ -72,5 +89,6 @@
             </nav>
             <p>&copy Food You Have 2021</p>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>
